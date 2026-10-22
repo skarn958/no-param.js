@@ -12,7 +12,7 @@ init_digits = 'x=Set,x.toString=Array.prototype.indexOf,a=x+-x,b=a+-x,c=b+-x,d=c
 * Array.prototype.toString = Array.prototype.lastIndexOf; // gets -1 
 * Error.prepareStackTrace = String.prototype.split;
 * 
-* // generate function Date ....
+* // generate function 
 * er = new Error;
 * er.toString = Array.prototype.join; // gets ''
 * r = er.stack;
