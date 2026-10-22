@@ -8,7 +8,7 @@ init_digits = 'x=Set,x.toString=Array.prototype.indexOf,a=x+-x,b=a+-x,c=b+-x,d=c
 * delete Error.name;
 * Error.message = Array;
 * Error.toString = Error.prototype.toString;
-* toStrBackup=Array.prototype.toString
+* toStrBackup=Array.prototype.toString // backup the original array to string function
 * Array.prototype.toString = Array.prototype.lastIndexOf; // gets -1 
 * Error.prepareStackTrace = String.prototype.split;
 * 
@@ -52,7 +52,8 @@ init_digits = 'x=Set,x.toString=Array.prototype.indexOf,a=x+-x,b=a+-x,c=b+-x,d=c
 * lr = r+r+r+y
 * lr = r+y
 * 
-* // open parenthesis 
+*/
+// open parenthesis 
 init_state = 'delete Error.name,Error.message=Array,Error.toString=Error.prototype.toString,toStrBackup=Array.prototype.toString,Array.prototype.toString=Array.prototype.lastIndexOf,Error.prepareStackTrace=String.prototype.split,er=new Error,er.toString=Array.prototype.join,r=er.stack,r.toString=toStrBackup,Error.message=r,er=new Error,er.toString=Array.prototype.join,r=er.stack,r.toString=Array.prototype.shift,y=BigInt,y.valueOf=Array.prototype.join,com=r+y,com=r+y,lu=r+y,ln=r+y,ln=r+y,lt=r+r+r+y,lt=r+y,spa=r+r+r+r+r+r+r+y,spa=r+y,lr=r+r+r+y,lr=r+y,po=r+r+r+r+r+r+r+y,po=r+y,pc=r+y,pc=r+y,bro=r+r+r+r+r+r+r+y,bro=r+y,le=r+r+r+r+r+r+r+r+r+r+r+y,le=r+y,brc=r+r+r+r+r+r+r+r+r+r+r+y,brc=r+y,y.valueOf=String.prototype.fontcolor,Error.message=y+y,er=new Error,er.toString=Array.prototype.join,r=er.stack,r.toString=Array.prototype.shift,y=BigInt,y.valueOf=Array.prototype.join,quo=r+r+r+r+r+r+r+r+r+r+r+r+y,quo=r+y';
 
 // construct the decoder payload 

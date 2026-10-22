@@ -8,7 +8,7 @@ init_digits = 'x=Set,x.toString=Array.prototype.indexOf,a=x+-x,b=a+-x,c=b+-x,d=c
 * delete Error.name;
 * Error.message = Array;
 * Error.toString = Error.prototype.toString;
-* toStrBackup=Array.prototype.toString
+* toStrBackup=Array.prototype.toString // backup the original array to string function
 * Array.prototype.toString = Array.prototype.lastIndexOf; // gets -1 
 * Error.prepareStackTrace = String.prototype.split;
 * 
