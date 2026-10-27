@@ -19,7 +19,7 @@ first we set shortcuts for repeating strings
 AP=Array.prototype,SP=String.prototype,EP=Error.prototype,
 ```
 
-then we generate the digits using the Array.prototype.indexOf function (thank pidone for the trick to convert it to string in one step)
+then we generate the digits using the Array.prototype.indexOf function 
 ```
 x=Set,y=Set,x.toString=AP.indexOf,y.valueOf=String,a=x+++y,b=x+++y,c=x+++y,d=x+++y,e=x+++y,f=x+++y,g=x+++y,h=x+++y,i=x+++y,j=x+++y,
 ````
@@ -43,7 +43,7 @@ le=r+r+r+r+r+y,le=r+y,      // letter e
 brc=r+r+r+r+r+y,brc=r+y     // closing bracket
 ```
 
-// get comma aus ' ,}'
+
 then we merge the remaining characters to get ` ,}` from which we obtain the comma  
 ```
 r.toString=tsb
@@ -53,7 +53,7 @@ Error.message=r,er=new Error,er.toString=AP.join,r=er.stack,r.toString=AP.shift,
 ```
 
 
-finallywe repeat the step to get `=` from using the `String.prototype.anchor` function
+finally we repeat the step to get `=` from using the `String.prototype.anchor` function
 ```
 y.valueOf=SP.anchor,Error.message=y+y,er=new Error,er.toString=AP.join,r=er.stack,r.toString=AP.shift,y.valueOf=AP.join,quo=r+r+r+r+r+r+r+r+y,quo=r+y,
 ```
